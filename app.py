@@ -43,10 +43,11 @@ while True:
 
         if valor is False:
             continue
-        else: 
+        elif valor > 0: 
             saldo += valor
             extrato += f"Operação: depósito. Valor: R$ {valor:.2f}\n"
-
+        else:
+            print("Valor de depósito precisa ser positivo")
 
 
     elif opcao.lower() == "s":
